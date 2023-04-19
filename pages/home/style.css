@@ -1,0 +1,7 @@
+#home__main {
+    background-image: url("../../assets/images/home__main-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow:hidden;
+}
