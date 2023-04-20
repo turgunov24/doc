@@ -33,7 +33,8 @@ h6 {
 }
 
 section {
-  background-color: var(--off-white)
+  background-color: var(--off-white);
+  overflow: hidden;
 }
 
 /* text colors */

@@ -1,4 +1,14 @@
 <?php
+// $serverName = "localhost";
+// $dbUsername = "root";
+// $dbPassword = "root";
+// $dbName = "users";
+
+// $connection = mysqli_connect($serverName,$dbUsername,$dbPassword,$dbName);
+// $sql = "SELECT * FROM users";
+// $result = mysqli_fetch_assoc(mysqli_query($connection,$sql));
+// echo($result["shop"]);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,13 +17,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css links -->
     <link rel="stylesheet" href="../../utils/styles/style.css">
     <link rel="stylesheet" href="../../utils/styles/custom_styles.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../libraries/locomotive_scroll/locomotive.scroll.css">
+    <!-- javascript links -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- <link rel="stylesheet" href="./libraries/locomotive_scroll/locomotive.scroll.css"> -->
-    <!-- <script type="module" src="./js/scroll.js"></script> -->
+    <script src="../../libraries/locomotive_scroll/locomtive.scroll.js"></script>
     <title>Home</title>
 </head>
 
@@ -45,7 +57,8 @@
                     Fullstack Developer - Turgunov Murodjon
                 </h1>
             </div>
-            <div id="home__category-and-globus" class="w-full relative flex justify-between items-center md:flex-row-reverse md:absolute top-1/2 left-0 -translate-y-1/2">
+            <div id="home__category-and-globus"
+                class="w-full relative flex justify-between items-center md:flex-row-reverse md:absolute top-1/2 left-0 -translate-y-1/2">
                 <div class="border relative text-white text-2xl">
                     <ion-icon name="arrow-forward-outline" class="text-xl absolute left-0 -top-10"></ion-icon>
                     Freelance <br>
@@ -59,7 +72,7 @@
         <!-- about -->
         <section id="home__about" data-scroll-section
             class="flex flex-col items-center px-4 py-20 gap-7 w-full h-max sm:p-20 md:flex-row md:gap-14 md:items-start lg:px-32">
-            <div id="about-left" class="w-full md:w-8/12" data-scroll data-scroll-speed="2">
+            <div id="about-left" class="w-full md:w-8/12">
                 <h4 class="text-xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt nemo perferendis impedit
                     deserunt quae fugiat voluptate tempora illum eius cum aistinctio soluta.
@@ -79,7 +92,7 @@
             </div>
         </section>
         <!-- works -->
-        <section id="home__works" class="flex flex-col gap-5 px-4 py-10">
+        <section data-scroll-section id="home__works" class="flex flex-col gap-5 px-4 py-10">
             <span data-clr="ltgry" class="hidden md:block text-xs px-20">
                 RECENT WORK
             </span>
@@ -153,7 +166,56 @@
                 </a>
             </button>
         </section>
+        <!-- horizontal section -->
+        <section id="home__horizontal" data-scroll-section
+            class="hidden md:flex flex-col justify-between w-full h-max gap-5 py-10 border-2 border-red-400">
+            <div id="top" data-scroll data-scroll-direction="horizontal"
+                class="flex items-center justify-between gap-5 whitespace-nowrap border">
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+            </div>
+            <div id="bottom" data-scroll data-scroll-direction="horizontal"
+                class="flex items-center justify-between gap-5 whitespace-nowrap border">
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+                <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                </figure>
+            </div>
+        </section>
     </div>
+    <script>
+        (function () {
+            var scroll = new LocomotiveScroll({
+                el: document.querySelector("[data-scroll-container]"),
+                smooth: true,
+                multiplier: 1
+            });
+        })();
+    </script>
 </body>
 
 </html>
