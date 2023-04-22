@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="absolute top-0 left-0 w-full flex justify-between px-5 py-8 md:p-8">
+    <header id="navbar" class="absolute top-0 left-0 w-full flex justify-between px-5 py-8 md:p-8">
         <div class="logo">
             <a data-clr="blc" href="<?php echo __FILE__ ?>">
                 @turgunov

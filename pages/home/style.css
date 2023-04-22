@@ -4,3 +4,6 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+#home__horizontal #bottom,#home__horizontal #top{
+    overflow-x: scroll !important;
+}

@@ -84,10 +84,10 @@
                     sequi asperiores quisquam minima.
                 </h6>
                 <div class="relative w-5/12 md:w-full pb-10">
-                    <span data-bg="blc" data-clr="wht"
+                    <a data-bg="blc" data-clr="wht"
                         class="w-32 h-32 absolute -bottom-14 right-0 flex items-center justify-center p-10 rounded-full md:top-0 left-0 md:w-36 md:h-36">
                         About
-                    </span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -170,51 +170,55 @@
         <section id="home__horizontal" data-scroll-section
             class="hidden md:flex flex-col justify-between w-full h-max gap-5 py-10 border-2 border-red-400">
             <div id="top" data-scroll data-scroll-direction="horizontal"
-                class="flex items-center justify-between gap-5 whitespace-nowrap border">
+                class="flex items-center justify-between gap-5 border">
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
             </div>
             <div id="bottom" data-scroll data-scroll-direction="horizontal"
                 class="flex items-center justify-between gap-5 whitespace-nowrap border">
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
                 <figure data-bg="blc" class="w-max h-max flex items-center justify-center px-6 py-8 border">
-                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-52 lg:w-60 xl:w-72">
+                    <img src="../../assets/images/home__main-background.jpg" class="w-56 h-full lg:w-60 xl:w-72">
                 </figure>
             </div>
         </section>
     </div>
+    <?php 
+    include("../../components/footer/footer.php")
+    ?>
+
     <script>
-        (function () {
-            var scroll = new LocomotiveScroll({
-                el: document.querySelector("[data-scroll-container]"),
-                smooth: true,
-                multiplier: 1
-            });
-        })();
+        // (function () {
+        //     var scroll = new LocomotiveScroll({
+        //         el: document.querySelector("[data-scroll-container]"),
+        //         smooth: true,
+        //         multiplier: 1
+        //     });
+        // })();
     </script>
 </body>
 
